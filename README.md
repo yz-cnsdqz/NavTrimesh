@@ -1,6 +1,6 @@
 # NavTrimesh
 
-This work is to perform path finding in a navigation mesh, based on the A* algorithm. The navigation mesh should be pre-calculated via e.g. Blender, Unity3D, Unreal, and so on. The **ONLY** requirement of the navigation mesh, is it should be a **triangle mesh**.
+This work is to perform path finding in a navigation mesh, based on the A* algorithm. The navigation mesh should be pre-calculated via e.g. Blender, Unity3D, Unreal, and so on. The **ONLY** requirement of the navigation mesh is, that it should be a **triangle mesh**.
 
 When using this code, please cite our work. Thanks!
 ```
