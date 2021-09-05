@@ -39,7 +39,7 @@ In the visualization, the red and black dots denote the starting and the target 
 
 
 
-:warning: Note that in some cases of `monkey.obj`, the search can fail. This is mainly because the search algorithm reaches some isolated triangles without any unsearched neighbours. Then the algorithm produces an empty list of the face neighbourhood. This might indicate that the generated mesh is not perfect.
+:warning: Note that in some cases of `monkey.obj`, the search can fail. This is mainly because the search algorithm reaches some isolated triangles without any unsearched neighbours in the very beginning. In this case, the algorithm produces an empty list of the face neighbourhood. This failure might indicate that the generated mesh is not perfect. But bugs of this code are welcome to report.
 
 
 
