@@ -21,8 +21,8 @@ def visualize(mesh, loc_s, loc_t, traj):
 
 
 if __name__=='__main__':
-    filename = 'data/navi_BasementSittingBooth.obj'
-    mesh = trimesh.load(filename)
+    filename = 'data/monkey.obj'
+    mesh = trimesh.load(filename, force='mesh')
 
     '''sample two points on the mesh'''
     pts = trimesh.sample.sample_surface(mesh, 2, face_weight=None)[0]

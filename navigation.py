@@ -6,8 +6,7 @@ Input:
 |-- starting location
 |-- target location
 Output:
-|-- the sequence of the face id
-|-- a plausible path (optionally)
+|-- a plausible path
 '''
 
 import os, sys, glob
@@ -115,13 +114,11 @@ def select_point_on_shared_edge(tri1,tri2, loc_in):
 def search_astar(mesh, loc_s, tri_id_s, loc_t, tri_id_t, loc_mode='random'):
     '''more structures about the trianglemesh'''
     face_adj = mesh.face_adjacency.tolist()
-
     openset = MinHeap()
     closedset = MinHeap()
     node_s = Node(loc_s, tri_id_s, g_val=0, h_val=np.linalg.norm(loc_t-loc_s))
     node_t = Node(loc_t, tri_id_t, g_val=1e8, h_val=0)
     openset.push(node_s)
-
     while not openset.is_empty():
         node_curr = openset.pop()
         closedset.push(node_curr)
