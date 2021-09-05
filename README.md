@@ -16,7 +16,6 @@ When using this code, please cite our work. Thanks!
 
 
 ## features
----
 Overall, this path finding module requires a triangle nagivation mesh, a starting location, and a target location. If any of the two given locations are not on the mesh, an error is raised. The navigation has two modes, depending on how to locate the avatar within each triangle.
 
 - The `random` mode: In each triangle, we randomly select a point as the sub-target. Therefore, the produced path is not deterministic. This can increase the diversity. On the other hand, the path may not be short.
@@ -24,7 +23,6 @@ Overall, this path finding module requires a triangle nagivation mesh, a startin
 
 
 ## examples
----
 One can start with `python vis.py`. Both the maze example and the monkey example spend less than 2 seconds, from clicking enter to seeing the visualization.
 
 In the visualization, the red and black dots denote the starting and the target locations, respectively.
