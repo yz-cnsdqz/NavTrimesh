@@ -1,6 +1,6 @@
 # NavTrimesh
 
-This work is to perform path finding in a navigation mesh, based on the A* algorithm. The navigation mesh should be pre-calculated via e.g. Blender, Unity3D, Unreal, and so on. The **ONLY** requirement of the navigation mesh, is it should be a **triangle mesh**.
+This work is to perform path finding in a navigation mesh, based on the A* algorithm. The navigation mesh should be pre-calculated via e.g. Blender, Unity3D, Unreal, and so on. The **ONLY** requirement of the navigation mesh is, that it should be a **triangle mesh**.
 
 When using this code, please cite our work. Thanks!
 ```
@@ -40,7 +40,7 @@ In the visualization, the red and black dots denote the starting and the target 
 
 
 
-:warning: Note that in some cases of `monkey.obj`, the search can fail. This is mainly because the search algorithm reaches some isolated triangles without any unsearched neighbours. Then the algorithm produces an empty list of the face neighbourhood. This might indicate that the generated mesh is not perfect.
+:warning: Note that in some cases of `monkey.obj`, the search can fail. This is mainly because the search algorithm reaches some isolated triangles without any unsearched neighbours in the very beginning. In this case, the algorithm produces an empty list of the face neighbourhood. This failure might indicate that the generated mesh is not perfect. But bugs of this code are welcome to report.
 
 
 
