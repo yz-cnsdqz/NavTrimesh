@@ -20,6 +20,7 @@ Overall, this path finding module requires a triangle nagivation mesh, a startin
 
 - The `random` mode: In each triangle, we randomly select a point as the sub-target. Therefore, the produced path is not deterministic. This can increase the diversity. On the other hand, the path may not be short.
 - The `on_edge` mode: The sub-target points are located on triangle edges, and are determined by projecting the target/current location to that edge. The produced path is shorter than `random`, but is still not global-optimal.
+- The `on_edge_random` mode: Similar to `on_edge`, but the location on the edge is determined by the weighted average between the projections of the current/target location, with a random weight.
 
 
 ## examples

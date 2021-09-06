@@ -143,6 +143,13 @@ def search_astar(mesh, loc_s, tri_id_s, loc_t, tri_id_t, loc_mode='random'):
                 loc2 = select_point_on_shared_edge(tri,
                         mesh.triangles[tri_id_curr], node_t.loc)
                 loc = (loc1+loc2)/2
+            elif loc_mode == 'on_edge_random':
+                loc1 = select_point_on_shared_edge(tri,
+                        mesh.triangles[tri_id_curr], node_curr.loc)
+                loc2 = select_point_on_shared_edge(tri,
+                        mesh.triangles[tri_id_curr], node_t.loc)
+                aa = np.random.rand()
+                loc = aa*loc1+(1-aa)*loc2
 
             g_val = np.linalg.norm(loc-node_curr.loc)+node_curr.g_val
             h_val = np.linalg.norm(loc-loc_t)

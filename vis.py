@@ -21,7 +21,7 @@ def visualize(mesh, loc_s, loc_t, traj):
 
 
 if __name__=='__main__':
-    filename = 'data/monkey.obj'
+    filename = 'data/navi_maze.obj'
     mesh = trimesh.load(filename, force='mesh')
 
     '''sample two points on the mesh'''
@@ -30,7 +30,7 @@ if __name__=='__main__':
     loc_t = pts[1]
 
     '''perform search'''
-    traj = navigation(mesh, loc_s, loc_t, loc_mode='on_edge')
+    traj = navigation(mesh, loc_s, loc_t, loc_mode='on_edge_random')
     if traj is None:
         print('search failed')
     else:
