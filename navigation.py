@@ -1,6 +1,6 @@
 '''
 Assuming the input is the navigation mesh (triangle mesh!), this script produces a path for navigation.
-Note that this algorithm is not deterministic. The neighbour is dependent on the adjacent triangles, but we sample points in each triangle.
+Note that this algorithm might not be deterministic. The neighbour is dependent on the adjacent triangles, but we can sample points in each triangle.
 Input:
 |-- triangle mesh (maybe a file)
 |-- starting location
