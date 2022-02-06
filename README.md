@@ -2,13 +2,19 @@
 
 This work is to perform path finding in a navigation mesh, based on the A* algorithm. The navigation mesh should be pre-calculated via e.g. Blender, Unity3D, Unreal, and so on. The **ONLY** requirement of the navigation mesh is, that it should be a **triangle mesh**.
 
-When using this code, please cite our work. Thanks!
+When using this code, please cite our works. Thanks!
 ```
 @inproceedings{zhang2021we,
   title={We are More than Our Joints: Predicting how 3D Bodies Move},
   author={Zhang, Yan and Black, Michael J and Tang, Siyu},
   booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
   pages={3372--3382},
+  year={2021}
+}
+@article{zhang2021wanderings,
+  title={The Wanderings of Odysseus in 3D Scenes},
+  author={Zhang, Yan and Tang, Siyu},
+  journal={arXiv preprint arXiv:2112.09251},
   year={2021}
 }
 ```
